@@ -1,0 +1,194 @@
+/* основной цвет текста color: #212121 */
+/* вторичный цвет текста color: #757575 */
+/* белый цвет color: #FFFFFF */
+/* акцент background: #2196F3 */
+/* неактивная кнопка background: #F5F4FA */
+/* подвал color: rgba(255, 255, 255, 0.6) */
+/* подвал background: #2F303A */
+/* *Переменные */
+:root {
+  --main-texet-color: #212121;
+  --main-white-color: #e5e5e5;
+  --secondary-text-color: #757575;
+  --accent-texte-color: #2196f3;
+  --secondary-br-color: #f5f4fa;
+  --adress-footer-color: rgba(255, 255, 255, 0.6);
+  --footer-background: #2f303a;
+  --white-color: #ffffff;
+}
+/* ОБЩИЕ ПРИМЕНЕНИЯ К СТРАНИЦЕ */
+body {
+  color: var(--main-texet-color); /**основной цвет текста*/
+  background-color: var(--main-white-color); /**фон всей страницы*/
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*TODO УТИЛИТЫ */
+/* .link {
+  text-decoration: none; /**убрали подчеркивание к ссылкам
+  color: inherit; /**убрали синий цвет ссылок
+} */
+
+.list {
+  list-style: none; /**убрали маркеры из списка*/
+}
+
+/*TODO УТИЛИТНЫЙ КЛАСС */
+.button {
+  /** основная кнопка*/
+  color: var(--main-texet-color);
+  background-color: var(--main-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.button.primary {
+  color: var(--main-white-color);
+  background-color: var(--accent-texte-color);
+}
+.button.secondary {
+  color: var(--main-texet-color);
+  background-color: var(--secondary-br-color);
+}
+/** Секция*/
+.section {
+  color: var(--main-texet-color);
+}
+/** Заголовки секций*/
+.section-title {
+  color: var(--main-texet-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/*               !Шапка сайта              */
+header {
+  background-color: #ffffff; /**фон*/
+}
+/* ?Logo */
+.logo .link,
+.info .link {
+  text-decoration: none;
+}
+.logo .start {
+  color: var(--accent-texte-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo .end {
+  color: var(--main-texet-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/* ?Навигация сайта */
+.site-nav .link {
+  color: var(--main-texet-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-texte-color);
+}
+.site-nav .link.current {
+  color: var(--accent-texte-color);
+}
+/* ?Контакты */
+.header-contact .link {
+  color: var(--main-texet-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.header-contact .link:hover,
+.header-contact .link:focus {
+  color: var(--accent-texte-color);
+}
+/*                !Герой              */
+
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ?button */
+/* оформлении кнопки находиться в common.css */
+
+/*               !Приемущества              */
+
+.feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+/*            !Чем мы занимаемся           */
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.proffesion {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/*              !Подвал сайта              */
+footer {
+  background-color: var(--footer-background);
+}
+.footer-logo .logo-start {
+  color: var(--accent-texte-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-logo .logo-end {
+  color: var(--white-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.info .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--adress-footer-color);
+}
+.info .link:hover,
+.info .link:focus {
+  color: var(--white-color);
+}
+.info .copy {
+  color: var(--adress-footer-color);
+}
