@@ -109,7 +109,7 @@ header {
 }
 /* ?Контакты */
 .header-contact .link {
-  color: var(--main-texet-color);
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -192,4 +192,33 @@ footer {
 }
 .info .copy {
   color: var(--adress-footer-color);
+}
+
+/* !CSS Portfolio */
+
+/* !-- *! Фильтр --> */
+
+.filter .button.secondary:hover,
+.filter .button.secondary:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-texte-color);
+}
+
+/*!-- *!Портфолио --> */
+
+.name-project {
+  color: var(--main-texet-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+.section .link {
+  text-decoration: none;
 }
