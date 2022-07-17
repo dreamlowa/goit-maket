@@ -19,7 +19,6 @@
 /* ОБЩИЕ ПРИМЕНЕНИЯ К СТРАНИЦЕ */
 body {
   color: var(--main-texet-color); /**основной цвет текста*/
-  background-color: var(--main-white-color); /**фон всей страницы*/
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -32,38 +31,76 @@ body {
 
 .list {
   list-style: none; /**убрали маркеры из списка*/
+    margin: 0;
+    padding: 0;
+    outline: 1px solid tomato;
 }
 
 /*TODO УТИЛИТНЫЙ КЛАСС */
+
+/** Кнопка*/
 .button {
-  /** основная кнопка*/
+  display: inline-block;
+  border: 0px solid transparent;
   color: var(--main-texet-color);
   background-color: var(--main-white-color);
+  
+  padding: 6px 22px;
+  border-radius: 4px;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  text-align: center;
   cursor: pointer;
 }
+
+/** Основная кнопка*/
 .button.primary {
-  color: var(--main-white-color);
+  color: var(--white-color);
   background-color: var(--accent-texte-color);
+
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
 }
+
+/** Альтернативная кнопка*/
 .button.secondary {
   color: var(--main-texet-color);
   background-color: var(--secondary-br-color);
+
 }
+
 /** Секция*/
 .section {
-  color: var(--main-texet-color);
+  margin: 94px;
 }
+
+  /* Контейнер */
+  .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato ;
+
+}
+
 /** Заголовки секций*/
 .section-title {
   color: var(--main-texet-color);
+  margin: 0;
+  padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  outline: 1px solid tomato;
 }
 
 /*               !Шапка сайта              */
@@ -120,47 +157,79 @@ header {
 .header-contact .link:focus {
   color: var(--accent-texte-color);
 }
+
 /*                !Герой              */
 
 .hero {
+
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 /* ?button */
+
 /* оформлении кнопки находиться в common.css */
 
 /*               !Приемущества              */
 
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
+  
 }
 .feature-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71px;
 }
 
 /*            !Чем мы занимаемся           */
+.work-list .title {
 
+}
+
+
+
+/*                 !Наша команда                  */
+
+.comands .item {
+  padding-bottom: 94px;
+}
 .name {
+  margin: 0;
+  padding-top: 30px;
+padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 .proffesion {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
+
 
 /*              !Подвал сайта              */
 footer {
@@ -200,14 +269,31 @@ footer {
 
 .filter .button.secondary:hover,
 .filter .button.secondary:focus {
-  color: var(--main-white-color);
+  color: var(--white-color);
   background-color: var(--accent-texte-color);
-}
+  }
 
+  .filter {
+margin-top: 94px;
+padding-bottom: 34px;
+}
+  .filter .item {
+
+  }
 /*!-- *!Портфолио --> */
 
+.section-portfolio {
+  margin-bottom: 94px;
+}
+.section-portfolio .link {
+  text-decoration: none;
+}
 .name-project {
   color: var(--main-texet-color);
+
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -215,10 +301,10 @@ footer {
 }
 
 .project {
+  margin: 0;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  
   font-size: 16px;
   line-height: 1.87;
-}
-.section .link {
-  text-decoration: none;
 }

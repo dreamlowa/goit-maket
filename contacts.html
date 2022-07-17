@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- !Шапка сайта -->
-    <header>
-      <nav>
+    <header class="page-header">
+      <nav class="container">
         <section class="logo">
           <a href="./index.html" class="link"
             ><span class="start">Web</span><span class="end">Studio</span></a
           >
         </section>
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студия</a></li>
+          <li><a href="./index.html" class="link current">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="./contacts.html" class="link current">Контакты</a></li>
+          <li><a href="./contacts.html" class="link">Контакты</a></li>
         </ul>
 
         <ul class="header-contact list">
@@ -48,28 +52,30 @@
 
     <!-- !Подвал сайта -->
     <footer class="info">
-      <section class="footer-logo">
-        <a href="./index.html" class="link"
-          ><span class="logo-start">Web</span
-          ><span class="logo-end">Studio</span></a
-        >
-      </section>
-      <address class="">
-        <ul class="list">
-          <li class="address">
-            <a href="" class="link"> г.Киев, пр-т Леси Украинки, 2б</a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-      <p class="copy">&copy; ООО Крастериск, 2022</p>
+      <div class="container">
+        <section class="footer-logo">
+          <a href="./index.html" class="link"
+            ><span class="logo-start">Web</span
+            ><span class="logo-end">Studio</span></a
+          >
+        </section>
+        <address class="">
+          <ul class="list">
+            <li class="address">
+              <a href="" class="link"> г.Киев, пр-т Леси Украинки, 2б</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        <p class="copy">&copy; ООО Крастериск, 2022</p>
+      </div>
     </footer>
   </body>
 </html>
