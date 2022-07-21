@@ -29,14 +29,16 @@ body {
   color: inherit; /**убрали синий цвет ссылок
 } */
 
-.list {
-  list-style: none; /**убрали маркеры из списка*/
-    margin: 0;
-    padding: 0;
-    outline: 1px solid tomato;
-}
+
 
 /*TODO УТИЛИТНЫЙ КЛАСС */
+.list {
+  list-style: none;
+  /**убрали маркеры из списка*/
+  margin: 0;
+  padding: 0;
+  outline: 1px solid tomato;
+}
 
 /** Кнопка*/
 .button {
@@ -107,7 +109,22 @@ body {
 header {
   background-color: #ffffff; /**фон*/
 }
+.main-nav {
+  display: flex;
+    align-items: center;
+  }
+
 /* ?Logo */
+.logo .item{
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo {
+  display: block;
+  outline: 1px solid tomato;
+}
+
 .logo .link,
 .info .link {
   text-decoration: none;
@@ -128,8 +145,23 @@ header {
 }
 
 /* ?Навигация сайта */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-texet-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -145,7 +177,20 @@ header {
   color: var(--accent-texte-color);
 }
 /* ?Контакты */
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  
+}
+.header-contact .item +.item {
+  margin-left: 50px;
+}
+
 .header-contact .link {
+  display: block;
+    padding-top: 32px;
+      padding-bottom: 32px;
+  
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -180,6 +225,14 @@ header {
 /* оформлении кнопки находиться в common.css */
 
 /*               !Приемущества              */
+.feature-list .item{
+  width: 270px; 
+  outline: 1px solid tomato;
+}
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 .feature-list .title {
   margin-top: 0;
@@ -196,7 +249,7 @@ header {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
 }
 
 /*            !Чем мы занимаемся           */
