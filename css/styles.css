@@ -206,18 +206,35 @@ header {
 /*                !Герой              */
 
 .hero {
+/* display: inline; */
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient( 
+    to right,
+    rgba(196, 196, 196, 0.1),
+    rgba(196, 196, 196, 0.1)),
+    url("../images/hero/Hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 
   text-align: center;
+  outline: 1px solid tomato
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  padding-top: 200px;
+  margin: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  
+  color: var(--white-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  outline: 1px solid tomato
 }
 
 /* ?button */
@@ -262,6 +279,7 @@ header {
   flex-wrap: wrap;
 }
 .work-list .item{
+
   width: 370px;
   margin-right: 30px;
   outline: 1px solid tomato;
@@ -275,6 +293,7 @@ header {
 /*                 !Наша команда                  */
 
 .section-comands {
+  background-color: #F5F4FA;
   margin-bottom: 0;
 }
 .comands {
@@ -288,6 +307,9 @@ header {
 .comands .item {
   margin-right: 30px; 
   outline: 1px solid tomato;
+  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .comands .item:nth-child(4n) {
