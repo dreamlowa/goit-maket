@@ -25,10 +25,7 @@ body {
 }
 
 /*TODO УТИЛИТЫ */
-*:focus {
-  outline: 1px solid var(--main-texet-color);
-  border-radius: 4px;
-}
+
 /* .link {
   text-decoration: none; /**убрали подчеркивание к ссылкам
   color: inherit; /**убрали синий цвет ссылок
