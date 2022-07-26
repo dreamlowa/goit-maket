@@ -295,16 +295,16 @@ header {
 }
 
 .icon-antenna::before {
-  background-image: url(../icons/feature/antenna.png);
+  background-image: url(../icons/feature/antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../icons/feature/clock.png);
+  background-image: url(../icons/feature/clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../icons/feature/diagram.png);
+  background-image: url(../icons/feature/diagram.svg);
 }
 .icon-astronaut::before {
-  background-image: url(../icons/feature/astronaut.png);
+  background-image: url(../icons/feature/astronaut.svg);
 }
 
 /*            !Чем мы занимаемся          */
@@ -447,22 +447,22 @@ header {
 } */
 
 .regular-clients .client1::before {
-  background-image: url(../icons/clients/1.png);
+  background-image: url(../icons/clients/1.svg);
 }
 .regular-clients .client2::before {
-  background-image: url(../icons/clients/2.png);
+  background-image: url(../icons/clients/2.svg);
 }
 .regular-clients .client3::before {
-  background-image: url(../icons/clients/3.png);
+  background-image: url(../icons/clients/3.svg);
 }
 .regular-clients .client4::before {
-  background-image: url(../icons/clients/4.png);
+  background-image: url(../icons/clients/4.svg);
 }
 .regular-clients .client5::before {
-  background-image: url(../icons/clients/5.png);
+  background-image: url(../icons/clients/5.svg);
 }
 .regular-clients .client6::before {
-  background-image: url(../icons/clients/6.png);
+  background-image: url(../icons/clients/6.svg);
 }
 
 /*              !Подвал сайта              */
